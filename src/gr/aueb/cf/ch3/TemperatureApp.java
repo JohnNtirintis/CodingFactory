@@ -17,14 +17,13 @@ public class TemperatureApp {
         boolean isSnowing = false;
         int temp = 0;
 
+        //Get user input
         System.out.println("Please enter the temperature");
         temp = sc.nextInt();
 
+        //Set the bool value of the bool variable
         isSnowing = temp < 0;
 
         System.out.printf("Is it snowing? %b", isSnowing);
-
-
-
     }
 }
