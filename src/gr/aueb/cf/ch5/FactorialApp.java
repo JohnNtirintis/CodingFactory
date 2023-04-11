@@ -18,5 +18,9 @@ public class FactorialApp {
         if (x <= 1) return x;
 
         return x * facto(x-1);
+
+//        Alternative way:
+//        return (n <= 1) ? 1 : n * facto(n-1)
+
     }
 }

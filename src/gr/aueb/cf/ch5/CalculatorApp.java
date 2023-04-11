@@ -10,11 +10,12 @@ import java.util.Scanner;
 public class CalculatorApp {
 
 //    Global Scanner
-    public static Scanner sc = new Scanner(System.in);
+     static Scanner sc = new Scanner(System.in);
 
     public static void main(String[] args) {
 
-        int choice;
+        int choice = 0;
+        int result = 0;
 
         do{
             printMenu();
@@ -28,6 +29,7 @@ public class CalculatorApp {
                 System.out.println("Quitting.");
                 break;
             }
+            System.out.printf("Result = %d", result);
         }while(true);
     }
 
