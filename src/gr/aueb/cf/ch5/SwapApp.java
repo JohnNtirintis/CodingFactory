@@ -1,7 +1,8 @@
 package gr.aueb.cf.ch5;
 
 /**
- * Swaps 2 values
+ * Showcases swapping with call by value
+ * Which doesnt work in this case
  *
  * @author Ntirintis John
  */
