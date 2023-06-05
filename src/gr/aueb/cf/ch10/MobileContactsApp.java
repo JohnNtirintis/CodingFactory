@@ -111,7 +111,6 @@ public class MobileContactsApp {
         System.out.println("Q/q. Exit");
     }
 
-
     public static String getChoice(){
         System.out.println("Enter your choice");
         return in.nextLine();
