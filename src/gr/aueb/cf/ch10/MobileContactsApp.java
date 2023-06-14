@@ -92,7 +92,6 @@ public class MobileContactsApp {
 
     public static void printAllContacts(String[][] contacts){
         for (String[] contact : contacts) {
-            //System.out.printf("%s\t%s\t%s\n", contact[0], contact[1], contact[2]);;
             printContact(contact);
         }
     }
@@ -323,12 +322,6 @@ public class MobileContactsApp {
 
         // Didn't find the number
         if (positionToUpdate == -1) return false;
-            //return new String[] {};
-
-//        contact[0] = contacts[positionToUpdate][0];
-//        contact[1] = contacts[positionToUpdate][1];
-//        contact[2] = contacts[positionToUpdate][2];
-
         contacts[positionToUpdate][0] = firstName;
         contacts[positionToUpdate][1] = lastName;
         contacts[positionToUpdate][2] = newPhoneNumber;
@@ -341,20 +334,11 @@ public class MobileContactsApp {
         String[] contact = new String[3];
 
         if (positionToDelete == -1) return new String[] {};
-
-//        for(int i = 0; i < contact.length; i++){
-//            contact[i] = contacts[positionToDelete][i];
-//        }
-
-        // What? Check later
         System.arraycopy(contacts[positionToDelete], 0, contact, 0, contact.length);
 
         if(!(positionToDelete == contacts.length - 1)) {
-            // Check later
-            // pivot will arr.len ?
             System.arraycopy(contacts, positionToDelete + 1, contacts, positionToDelete, pivot - positionToDelete);
         }
-
         pivot--;
         return contact;
     }
@@ -376,10 +360,6 @@ public class MobileContactsApp {
         // Can also use contacts.length
         return pivot == arr.length - 1;
     }
-
-    // Custom Logger
-    // Varargs String[] message
-    // log(exception)
 
     public static void log(Exception e, String... message){
         try (PrintStream ps = new PrintStream(new FileOutputStream(PATH.toFile(), true))) {
