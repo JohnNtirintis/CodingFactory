@@ -1,4 +1,6 @@
-package gr.aueb.cf.ch11;
+package gr.aueb.cf.ch12;
+
+import gr.aueb.cf.ch12.model.Point;
 
 /**
  * Immutable 3d point

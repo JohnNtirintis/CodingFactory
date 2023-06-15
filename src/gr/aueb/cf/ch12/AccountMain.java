@@ -15,7 +15,7 @@ public class AccountMain {
             System.out.println("Get Daniel's account balance: " + daniel.getAccountBalance());
             System.out.println(daniel.getAccountState());
 
-            daniel.withdraw(100, "T456");
+            daniel.withdraw(100, "R333");
 
         } catch (Exception e){
             System.out.println(e.getMessage());
